@@ -10,6 +10,7 @@ import java.util.Date;
 /**
  *
  * @author burcu
+ * @param ad: Doviz adı girilir.
  */
 public class Doviz extends Faiz {
 
