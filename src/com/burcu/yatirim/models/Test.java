@@ -25,7 +25,7 @@ public class Test {// test sýnýfý oluþturdum
         Tahvil Tahvil = new Tahvil("tahvil hesabý", 1250, ilk, son, 2);
         Doviz Döviz = new Doviz("döviz hesabý", 1750, ilk, son, 5, 1.5);
         Musteri Musteri = new Musteri("musteri", Hesap, kar, Döviz, Tahvil);
-        System.out.println("iþlemler sonunda toplam anapara= " + (Musteri.Doviz.getiri() + Musteri.Faiz.getiri() + Musteri.Hesap.getAnaPara() + Musteri.Tahvil.getiri()));
+        System.out.println("iþlemler sonunda toplam anapara= " + (Musteri.getDoviz().getiri() + Musteri.getFaiz().getiri() + Musteri.getHesap().getAnaPara() + Musteri.getTahvil().getiri()));
         System.out.println();
         System.out.println();
         System.out.println();
@@ -35,7 +35,7 @@ public class Test {// test sýnýfý oluþturdum
         Tahvil Tahvil1 = new Tahvil("tahvil hesabý", 2500, ilk, son, 3);
         Doviz Döviz1 = new Doviz("döviz hesabý", 2500, ilk, son, 7, 2);
         Musteri Musteri1 = new Musteri("musteri", Hesap1, kar1, Döviz1, Tahvil1);
-        System.out.println("iþlemler sonunda toplam anapara= " + (Musteri1.Doviz.getiri() + Musteri1.Faiz.getiri() + Musteri1.Hesap.getAnaPara() + Musteri1.Tahvil.getiri()));
+        System.out.println("iþlemler sonunda toplam anapara= " + (Musteri1.getDoviz().getiri() + Musteri1.getFaiz().getiri() + Musteri1.getHesap().getAnaPara() + Musteri1.getTahvil().getiri()));
         System.out.println();
         System.out.println();
         System.out.println();
@@ -45,7 +45,7 @@ public class Test {// test sýnýfý oluþturdum
         Tahvil Tahvil2 = new Tahvil("tahvil hesabý", 7000, ilk, son, 3.5);
         Doviz Döviz2 = new Doviz("döviz hesabý", 13000, ilk, son, 3, 4);
         Musteri Musteri2 = new Musteri("musteri", Hesap2, kar2, Döviz2, Tahvil2);
-        System.out.println("iþlemler sonunda toplam anapara= " + (Musteri2.Doviz.getiri() + Musteri2.Faiz.getiri() + Musteri2.Hesap.getAnaPara() + Musteri2.Tahvil.getiri()));
+        System.out.println("iþlemler sonunda toplam anapara= " + (Musteri2.getDoviz().getiri() + Musteri2.getFaiz().getiri() + Musteri2.getHesap().getAnaPara() + Musteri2.getTahvil().getiri()));
         System.out.println();
         System.out.println();
         System.out.println();
