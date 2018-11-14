@@ -23,8 +23,6 @@ public class frmAnket extends javax.swing.JFrame {
     }
 
     MusteriDAO db = new MusteriDAO();
-    frmAnaSayfa frm = new frmAnaSayfa();
-    JTextField jt = new JTextField();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -220,8 +218,12 @@ public class frmAnket extends javax.swing.JFrame {
 
     private void jButtonSonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSonActionPerformed
         // TODO add your handling code here:
+
         Musteri mst = new Musteri();
-        db.Save(mst);
+        
+        mst.setPuanyas(jLabelPuanHesap.getText());
+        db.Update(mst);
+
     }//GEN-LAST:event_jButtonSonActionPerformed
 
     /**

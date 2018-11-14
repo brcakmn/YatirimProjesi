@@ -24,7 +24,7 @@ public class frmAnaSayfa extends javax.swing.JFrame {
         lblAdYildiz.setVisible(false);
         lblSoyadYildiz.setVisible(false);
         lblTelefonYildiz.setVisible(false);
-        lblAdresYildiz.setVisible(false);                
+        lblAdresYildiz.setVisible(false);
     }
 
     MusteriDAO db = new MusteriDAO();
@@ -210,14 +210,17 @@ public class frmAnaSayfa extends javax.swing.JFrame {
         if (isNull) {
             JOptionPane.showMessageDialog(null, "Lütfen (*) ile işaretli eksik alanları doldurunuz.", "Hata", JOptionPane.ERROR_MESSAGE);
         } else {
+
+            String ad = txtAnaSayfaAd.getText();
+
             Musteri mst = new Musteri();
             mst.setAd(txtAnaSayfaAd.getText());
             mst.setSoyad(txtAnaSayfaSoyad.getText());
             mst.setTelefon(txtAnaSayfaTelefon.getText());
             mst.setAdres(txtAnaSayfaAdres.getText());
-            
+
             db.Save(mst);
-            
+
             new frmAnket().setVisible(true);
             this.dispose();
         }

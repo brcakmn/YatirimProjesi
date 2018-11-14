@@ -16,7 +16,7 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
     private String soyad;
     private String telefon;
     private String adres;
-    private Long puanyas;
+    private String puanyas;
     private Hesap Hesap;
     private Faiz Faiz;
     private Doviz Doviz;
@@ -86,11 +86,11 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
         this.adres = adres;
     }
 
-    public Long getPuanyas() {
+    public String getPuanyas() {
         return puanyas;
     }
 
-    public void setPuanyas(Long puanyas) {
+    public void setPuanyas(String puanyas) {
         this.puanyas = puanyas;
     }
 
