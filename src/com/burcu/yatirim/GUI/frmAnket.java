@@ -98,6 +98,8 @@ public class frmAnket extends javax.swing.JFrame {
         lblPuan5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(840, 1050));
+        setPreferredSize(new java.awt.Dimension(840, 1050));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButtonSon.setText("Son");
@@ -116,10 +118,10 @@ public class frmAnket extends javax.swing.JFrame {
 
         lblPuan.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblPuan.setText("Puan Karşılığı");
-        jPanel1.add(lblPuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 20, 90, -1));
+        jPanel1.add(lblPuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, 90, -1));
 
         lbl67.setText("Kurumsal Müşteri");
-        jPanel1.add(lbl67, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 120, -1));
+        jPanel1.add(lbl67, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 120, -1));
 
         buttonGroup1.add(jRadioButton5);
         jRadioButton5.setText("3");
@@ -128,12 +130,12 @@ public class frmAnket extends javax.swing.JFrame {
                 jRadioButton5ActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, -1, -1));
+        jPanel1.add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, -1));
 
         lblPuan1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblPuan1.setText("Puan");
-        jPanel1.add(lblPuan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 20, 70, -1));
-        jPanel1.add(jLabelPuanHesap, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, 48, 62));
+        jPanel1.add(lblPuan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, 70, -1));
+        jPanel1.add(jLabelPuanHesap, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 70, 48, 62));
 
         lbl18.setText("18-30 Yaş");
         jPanel1.add(lbl18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 70, -1));
@@ -145,7 +147,7 @@ public class frmAnket extends javax.swing.JFrame {
                 jRadioButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, -1, -1));
+        jPanel1.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, -1, -1));
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("4");
@@ -154,7 +156,7 @@ public class frmAnket extends javax.swing.JFrame {
                 jRadioButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, -1, -1));
+        jPanel1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 40, -1, -1));
 
         buttonGroup1.add(jRadioButton3);
         jRadioButton3.setText("5");
@@ -163,7 +165,7 @@ public class frmAnket extends javax.swing.JFrame {
                 jRadioButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, -1, -1));
+        jPanel1.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, -1, -1));
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setText("3");
@@ -172,7 +174,7 @@ public class frmAnket extends javax.swing.JFrame {
                 jRadioButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 130, -1, -1));
+        jPanel1.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, -1, -1));
 
         lbl31.setText("31-50 Yaş");
         jPanel1.add(lbl31, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 70, -1));
@@ -180,7 +182,7 @@ public class frmAnket extends javax.swing.JFrame {
         lbl51.setText("51-65 Yaş");
         jPanel1.add(lbl51, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 70, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 760, 210));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 760, 190));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(" Risk ve getiri tercihiniz nedir?"));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -191,7 +193,7 @@ public class frmAnket extends javax.swing.JFrame {
         lbl19.setToolTipText("");
         lbl19.setAutoscrolls(true);
         lbl19.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jPanel2.add(lbl19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 240, 70));
+        jPanel2.add(lbl19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 440, 40));
 
         buttonGroup1.add(jRadioButton7);
         jRadioButton7.setText("15");
@@ -200,7 +202,7 @@ public class frmAnket extends javax.swing.JFrame {
                 jRadioButton7ActionPerformed(evt);
             }
         });
-        jPanel2.add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, -1, 30));
+        jPanel2.add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, -1, 30));
 
         buttonGroup1.add(jRadioButton8);
         jRadioButton8.setText("10");
@@ -209,7 +211,7 @@ public class frmAnket extends javax.swing.JFrame {
                 jRadioButton8ActionPerformed(evt);
             }
         });
-        jPanel2.add(jRadioButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, -1, 30));
+        jPanel2.add(jRadioButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 40, -1, 30));
 
         buttonGroup1.add(jRadioButton9);
         jRadioButton9.setText("20");
@@ -218,7 +220,7 @@ public class frmAnket extends javax.swing.JFrame {
                 jRadioButton9ActionPerformed(evt);
             }
         });
-        jPanel2.add(jRadioButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, -1, 30));
+        jPanel2.add(jRadioButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, 30));
 
         buttonGroup1.add(jRadioButton10);
         jRadioButton10.setText("40");
@@ -227,27 +229,27 @@ public class frmAnket extends javax.swing.JFrame {
                 jRadioButton10ActionPerformed(evt);
             }
         });
-        jPanel2.add(jRadioButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, -1, 30));
+        jPanel2.add(jRadioButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, -1, 30));
 
         lbl32.setText("<html>Enflasyonun üzerinde getiri beklentisiyle, yatırımımda düşük riskli ürünlere yatırım yapabilirim. (Anaparadan çok az bir miktar kaybetmeyi göze alabilirim)</html>");
-        jPanel2.add(lbl32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 250, -1));
+        jPanel2.add(lbl32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 430, -1));
 
         lbl52.setText("<html>Genel olarak orta riskli ürünleri tercih etmekle beraber, uzun vadede toplam getirimi artırmak amacıyla, riskli ürünlere makul ölçüde yatırım yapabilirim. (Anaparadan bir miktar kaybetmeyi göze alabilirim)</html>");
-        jPanel2.add(lbl52, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 240, -1));
+        jPanel2.add(lbl52, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 440, -1));
 
         lbl69.setText("<html>Çok yüksek getiri isterim ve çok yüksek riskli ürünlere yatırım yapabilirim. Gelişmiş yatırım ürünlerinin riskleri konusunda bilgiliyim ve bu ürünlere yatırım yapabilirim. (Anaparayı tamamen kaybetmeyi göze alabilirim)</html>");
-        jPanel2.add(lbl69, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 270, 60));
+        jPanel2.add(lbl69, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 430, 60));
 
         lblPuan2.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblPuan2.setText("Puan Karşılığı");
-        jPanel2.add(lblPuan2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 20, 136, -1));
+        jPanel2.add(lblPuan2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, 136, -1));
 
         lblPuan3.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblPuan3.setText("Puan");
-        jPanel2.add(lblPuan3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 20, 70, -1));
+        jPanel2.add(lblPuan3, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, 70, -1));
 
         lbl73.setText("<html>Yüksek getiri beklentisiyle, yüksek riskli ürünlere yatırım yapabilirim (Anaparadan kaybetmeyi göze alabilirim)</html>");
-        jPanel2.add(lbl73, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 260, 40));
+        jPanel2.add(lbl73, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 440, 40));
 
         buttonGroup1.add(jRadioButton26);
         jRadioButton26.setText("30");
@@ -256,9 +258,9 @@ public class frmAnket extends javax.swing.JFrame {
                 jRadioButton26ActionPerformed(evt);
             }
         });
-        jPanel2.add(jRadioButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 250, -1, 30));
+        jPanel2.add(jRadioButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, -1, 30));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 760, 370));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 760, 320));
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Mesleğiniz"));
 
@@ -300,10 +302,10 @@ public class frmAnket extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jRadioButton11)
                     .addComponent(jRadioButton12))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 610, 760, -1));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 540, 760, 120));
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Yatırımlarınızı ne kadar süreyle sermaye piyasalarında değerlendirmeyi düşünürsünüz?"));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -366,8 +368,8 @@ public class frmAnket extends javax.swing.JFrame {
         getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
 
         jLabel3.setText("Toplam Puan");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 950, -1, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 940, 135, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 910, -1, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 900, 135, -1));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Eğitim Durumunuz"));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -441,7 +443,7 @@ public class frmAnket extends javax.swing.JFrame {
         lblPuan5.setText("Puan");
         jPanel4.add(lblPuan5, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, 70, -1));
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 730, 760, 200));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 670, 760, 200));
 
         pack();
         setLocationRelativeTo(null);
