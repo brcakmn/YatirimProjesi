@@ -221,7 +221,7 @@ public class frmAnaSayfa extends javax.swing.JFrame {
 
             db.Save(mst);
 
-            new frmAnket().setVisible(true);
+            new frmAnketYas().setVisible(true);
             this.dispose();
         }
     }//GEN-LAST:event_jButtonAnaSayfaIleriMouseClicked

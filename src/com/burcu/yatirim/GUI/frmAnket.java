@@ -34,40 +34,6 @@ public class frmAnket extends javax.swing.JFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         jButtonSon = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        lbl66 = new javax.swing.JLabel();
-        lblPuan = new javax.swing.JLabel();
-        lbl67 = new javax.swing.JLabel();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        lblPuan1 = new javax.swing.JLabel();
-        jLabelPuanHesap = new javax.swing.JLabel();
-        lbl18 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        lbl31 = new javax.swing.JLabel();
-        lbl51 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabelPuanHesap1 = new javax.swing.JLabel();
-        lbl19 = new javax.swing.JLabel();
-        jRadioButton7 = new javax.swing.JRadioButton();
-        jRadioButton8 = new javax.swing.JRadioButton();
-        jRadioButton9 = new javax.swing.JRadioButton();
-        jRadioButton10 = new javax.swing.JRadioButton();
-        lbl32 = new javax.swing.JLabel();
-        lbl52 = new javax.swing.JLabel();
-        lbl69 = new javax.swing.JLabel();
-        lblPuan2 = new javax.swing.JLabel();
-        lblPuan3 = new javax.swing.JLabel();
-        lbl73 = new javax.swing.JLabel();
-        jRadioButton26 = new javax.swing.JRadioButton();
-        jPanel3 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jRadioButton11 = new javax.swing.JRadioButton();
-        jRadioButton12 = new javax.swing.JRadioButton();
         jPanel5 = new javax.swing.JPanel();
         jLabelPuanHesap3 = new javax.swing.JLabel();
         lbl21 = new javax.swing.JLabel();
@@ -82,20 +48,6 @@ public class frmAnket extends javax.swing.JFrame {
         lblPuan7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
-        jPanel4 = new javax.swing.JPanel();
-        jLabelPuanHesap2 = new javax.swing.JLabel();
-        lbl20 = new javax.swing.JLabel();
-        jRadioButton13 = new javax.swing.JRadioButton();
-        jRadioButton14 = new javax.swing.JRadioButton();
-        jRadioButton15 = new javax.swing.JRadioButton();
-        jRadioButton16 = new javax.swing.JRadioButton();
-        lbl33 = new javax.swing.JLabel();
-        lbl53 = new javax.swing.JLabel();
-        lbl70 = new javax.swing.JLabel();
-        lblPuan4 = new javax.swing.JLabel();
-        lbl71 = new javax.swing.JLabel();
-        jRadioButton17 = new javax.swing.JRadioButton();
-        lblPuan5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(840, 1050));
@@ -109,203 +61,6 @@ public class frmAnket extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonSon, new org.netbeans.lib.awtextra.AbsoluteConstraints(785, 1325, -1, -1));
-
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Yaşınız"));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbl66.setText("66 ve Üzeri");
-        jPanel1.add(lbl66, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 70, -1));
-
-        lblPuan.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblPuan.setText("Puan Karşılığı");
-        jPanel1.add(lblPuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, 90, -1));
-
-        lbl67.setText("Kurumsal Müşteri");
-        jPanel1.add(lbl67, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 120, -1));
-
-        buttonGroup1.add(jRadioButton5);
-        jRadioButton5.setText("3");
-        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton5ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, -1));
-
-        lblPuan1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblPuan1.setText("Puan");
-        jPanel1.add(lblPuan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, 70, -1));
-        jPanel1.add(jLabelPuanHesap, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 70, 48, 62));
-
-        lbl18.setText("18-30 Yaş");
-        jPanel1.add(lbl18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 70, -1));
-
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setText("6");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, -1, -1));
-
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setText("4");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 40, -1, -1));
-
-        buttonGroup1.add(jRadioButton3);
-        jRadioButton3.setText("5");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, -1, -1));
-
-        buttonGroup1.add(jRadioButton4);
-        jRadioButton4.setText("3");
-        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton4ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, -1, -1));
-
-        lbl31.setText("31-50 Yaş");
-        jPanel1.add(lbl31, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 70, -1));
-
-        lbl51.setText("51-65 Yaş");
-        jPanel1.add(lbl51, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 70, -1));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 760, 190));
-
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(" Risk ve getiri tercihiniz nedir?"));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel2.add(jLabelPuanHesap1, new org.netbeans.lib.awtextra.AbsoluteConstraints(731, 114, 48, 62));
-
-        lbl19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl19.setText("<html>Olabildiğince riskten kaçınır, güvenli yatırım araçlarını tercih eder, az ama düzenli bir getiri sağlamayı tercih ederim. (Anaparam aynen korunsun)</html>");
-        lbl19.setToolTipText("");
-        lbl19.setAutoscrolls(true);
-        lbl19.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jPanel2.add(lbl19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 440, 40));
-
-        buttonGroup1.add(jRadioButton7);
-        jRadioButton7.setText("15");
-        jRadioButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton7ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, -1, 30));
-
-        buttonGroup1.add(jRadioButton8);
-        jRadioButton8.setText("10");
-        jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton8ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jRadioButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 40, -1, 30));
-
-        buttonGroup1.add(jRadioButton9);
-        jRadioButton9.setText("20");
-        jRadioButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton9ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jRadioButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, 30));
-
-        buttonGroup1.add(jRadioButton10);
-        jRadioButton10.setText("40");
-        jRadioButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton10ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jRadioButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, -1, 30));
-
-        lbl32.setText("<html>Enflasyonun üzerinde getiri beklentisiyle, yatırımımda düşük riskli ürünlere yatırım yapabilirim. (Anaparadan çok az bir miktar kaybetmeyi göze alabilirim)</html>");
-        jPanel2.add(lbl32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 430, -1));
-
-        lbl52.setText("<html>Genel olarak orta riskli ürünleri tercih etmekle beraber, uzun vadede toplam getirimi artırmak amacıyla, riskli ürünlere makul ölçüde yatırım yapabilirim. (Anaparadan bir miktar kaybetmeyi göze alabilirim)</html>");
-        jPanel2.add(lbl52, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 440, -1));
-
-        lbl69.setText("<html>Çok yüksek getiri isterim ve çok yüksek riskli ürünlere yatırım yapabilirim. Gelişmiş yatırım ürünlerinin riskleri konusunda bilgiliyim ve bu ürünlere yatırım yapabilirim. (Anaparayı tamamen kaybetmeyi göze alabilirim)</html>");
-        jPanel2.add(lbl69, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 430, 60));
-
-        lblPuan2.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblPuan2.setText("Puan Karşılığı");
-        jPanel2.add(lblPuan2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, 136, -1));
-
-        lblPuan3.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblPuan3.setText("Puan");
-        jPanel2.add(lblPuan3, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, 70, -1));
-
-        lbl73.setText("<html>Yüksek getiri beklentisiyle, yüksek riskli ürünlere yatırım yapabilirim (Anaparadan kaybetmeyi göze alabilirim)</html>");
-        jPanel2.add(lbl73, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 440, 40));
-
-        buttonGroup1.add(jRadioButton26);
-        jRadioButton26.setText("30");
-        jRadioButton26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton26ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jRadioButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, -1, 30));
-
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 760, 320));
-
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Mesleğiniz"));
-
-        jLabel1.setText("Mesleği");
-
-        jLabel2.setText("Ticari Faaliyet: ");
-
-        jRadioButton11.setText("Var");
-
-        jRadioButton12.setText("Yok");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
-                .addGap(53, 53, 53)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jRadioButton11)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton12))
-                    .addComponent(jTextField1))
-                .addContainerGap(438, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jRadioButton11)
-                    .addComponent(jRadioButton12))
-                .addContainerGap(17, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 540, 760, 120));
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Yatırımlarınızı ne kadar süreyle sermaye piyasalarında değerlendirmeyi düşünürsünüz?"));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -368,157 +123,22 @@ public class frmAnket extends javax.swing.JFrame {
         getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
 
         jLabel3.setText("Toplam Puan");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 910, -1, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 900, 135, -1));
-
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Eğitim Durumunuz"));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel4.add(jLabelPuanHesap2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 80, 48, 62));
-
-        lbl20.setText("İlköğretim");
-        jPanel4.add(lbl20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 70, -1));
-
-        buttonGroup1.add(jRadioButton13);
-        jRadioButton13.setText("4");
-        jRadioButton13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton13ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jRadioButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, -1, -1));
-
-        buttonGroup1.add(jRadioButton14);
-        jRadioButton14.setText("3");
-        jRadioButton14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton14ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jRadioButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, -1));
-
-        buttonGroup1.add(jRadioButton15);
-        jRadioButton15.setText("6");
-        jRadioButton15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton15ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jRadioButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, -1, -1));
-
-        buttonGroup1.add(jRadioButton16);
-        jRadioButton16.setText("6");
-        jRadioButton16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton16ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jRadioButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, -1, -1));
-
-        lbl33.setText("Lise");
-        jPanel4.add(lbl33, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 70, 20));
-
-        lbl53.setText("Lisans");
-        jPanel4.add(lbl53, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 70, -1));
-
-        lbl70.setText("Lisansüstü");
-        jPanel4.add(lbl70, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 70, -1));
-
-        lblPuan4.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblPuan4.setText("Puan Karşılığı");
-        jPanel4.add(lblPuan4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 100, -1));
-
-        lbl71.setText("Kurumsal Müşteri");
-        jPanel4.add(lbl71, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 140, -1));
-
-        buttonGroup1.add(jRadioButton17);
-        jRadioButton17.setText("6");
-        jRadioButton17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton17ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jRadioButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 160, -1, -1));
-
-        lblPuan5.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblPuan5.setText("Puan");
-        jPanel4.add(lblPuan5, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, 70, -1));
-
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 670, 760, 200));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 135, -1));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
-        // TODO add your handling code here:
-        jLabelPuanHesap.setText(jRadioButton4.getText());
-    }//GEN-LAST:event_jRadioButton4ActionPerformed
-
-    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
-        // TODO add your handling code here:
-        jLabelPuanHesap.setText(jRadioButton5.getText());
-    }//GEN-LAST:event_jRadioButton5ActionPerformed
-
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
-        // TODO add your handling code here:
-        jLabelPuanHesap.setText(jRadioButton2.getText());
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
-
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-        // TODO add your handling code here:
-        jLabelPuanHesap.setText(jRadioButton1.getText());
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
-
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
-        // TODO add your handling code here:
-        jLabelPuanHesap.setText(jRadioButton3.getText());
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
 
     private void jButtonSonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSonActionPerformed
         // TODO add your handling code here:
 
         Musteri mst = new Musteri();
         
-        mst.setPuanyas(jLabelPuanHesap.getText());
+        
         db.Update(mst);
 
     }//GEN-LAST:event_jButtonSonActionPerformed
-
-    private void jRadioButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton7ActionPerformed
-
-    private void jRadioButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton8ActionPerformed
-
-    private void jRadioButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton9ActionPerformed
-
-    private void jRadioButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton10ActionPerformed
-
-    private void jRadioButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton13ActionPerformed
-
-    private void jRadioButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton14ActionPerformed
-
-    private void jRadioButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton15ActionPerformed
-
-    private void jRadioButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton16ActionPerformed
-
-    private void jRadioButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton17ActionPerformed
 
     private void jRadioButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton18ActionPerformed
         // TODO add your handling code here:
@@ -535,10 +155,6 @@ public class frmAnket extends javax.swing.JFrame {
     private void jRadioButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton21ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton21ActionPerformed
-
-    private void jRadioButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton26ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -579,66 +195,18 @@ public class frmAnket extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButtonSon;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabelPuanHesap;
-    private javax.swing.JLabel jLabelPuanHesap1;
-    private javax.swing.JLabel jLabelPuanHesap2;
     private javax.swing.JLabel jLabelPuanHesap3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton10;
-    private javax.swing.JRadioButton jRadioButton11;
-    private javax.swing.JRadioButton jRadioButton12;
-    private javax.swing.JRadioButton jRadioButton13;
-    private javax.swing.JRadioButton jRadioButton14;
-    private javax.swing.JRadioButton jRadioButton15;
-    private javax.swing.JRadioButton jRadioButton16;
-    private javax.swing.JRadioButton jRadioButton17;
     private javax.swing.JRadioButton jRadioButton18;
     private javax.swing.JRadioButton jRadioButton19;
-    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton20;
     private javax.swing.JRadioButton jRadioButton21;
-    private javax.swing.JRadioButton jRadioButton26;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton7;
-    private javax.swing.JRadioButton jRadioButton8;
-    private javax.swing.JRadioButton jRadioButton9;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JLabel lbl18;
-    private javax.swing.JLabel lbl19;
-    private javax.swing.JLabel lbl20;
     private javax.swing.JLabel lbl21;
-    private javax.swing.JLabel lbl31;
-    private javax.swing.JLabel lbl32;
-    private javax.swing.JLabel lbl33;
     private javax.swing.JLabel lbl34;
-    private javax.swing.JLabel lbl51;
-    private javax.swing.JLabel lbl52;
-    private javax.swing.JLabel lbl53;
     private javax.swing.JLabel lbl54;
-    private javax.swing.JLabel lbl66;
-    private javax.swing.JLabel lbl67;
-    private javax.swing.JLabel lbl69;
-    private javax.swing.JLabel lbl70;
-    private javax.swing.JLabel lbl71;
     private javax.swing.JLabel lbl72;
-    private javax.swing.JLabel lbl73;
-    private javax.swing.JLabel lblPuan;
-    private javax.swing.JLabel lblPuan1;
-    private javax.swing.JLabel lblPuan2;
-    private javax.swing.JLabel lblPuan3;
-    private javax.swing.JLabel lblPuan4;
-    private javax.swing.JLabel lblPuan5;
     private javax.swing.JLabel lblPuan6;
     private javax.swing.JLabel lblPuan7;
     // End of variables declaration//GEN-END:variables
