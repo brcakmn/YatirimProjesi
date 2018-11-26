@@ -5,6 +5,9 @@
  */
 package com.burcu.yatirim.GUI;
 
+import com.burcu.yatirim.dal.MusteriDAO;
+import com.burcu.yatirim.models.Musteri;
+
 /**
  *
  * @author User
@@ -14,6 +17,9 @@ public class frmAnketYatirim extends javax.swing.JFrame {
     /**
      * Creates new form frmAnketYatirim
      */
+    
+    MusteriDAO db = new MusteriDAO();
+    
     public frmAnketYatirim() {
         initComponents();
     }
@@ -168,6 +174,12 @@ public class frmAnketYatirim extends javax.swing.JFrame {
 
     private void btnAnketYatirimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnketYatirimActionPerformed
         // TODO add your handling code here:
+        Long yatirim = Long.parseLong(jLabelPuanHesap2.getText());
+        
+        Musteri mst = new Musteri();        
+        mst.setPuanyatirim(yatirim);        
+        db.UpdatePuanYatirim(mst);
+        
         new frmAnketRiskGetiri().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnAnketYatirimActionPerformed

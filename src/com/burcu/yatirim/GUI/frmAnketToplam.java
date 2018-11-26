@@ -132,12 +132,6 @@ public class frmAnketToplam extends javax.swing.JFrame {
 
     private void jButtonSonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSonActionPerformed
         // TODO add your handling code here:
-
-        Musteri mst = new Musteri();
-        
-        
-        db.Update(mst);
-
     }//GEN-LAST:event_jButtonSonActionPerformed
 
     private void jRadioButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton18ActionPerformed

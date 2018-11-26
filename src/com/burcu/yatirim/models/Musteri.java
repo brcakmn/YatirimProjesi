@@ -16,7 +16,10 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
     private String soyad;
     private String telefon;
     private String adres;
-    private String puanyas;
+    private Long puanyas;
+    private Long puanegitim;
+    private Long puanyatirim;
+    private String meslek;
     private Hesap Hesap;
     private Faiz Faiz;
     private Doviz Doviz;
@@ -86,11 +89,11 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
         this.adres = adres;
     }
 
-    public String getPuanyas() {
+    public Long getPuanyas() {
         return puanyas;
     }
 
-    public void setPuanyas(String puanyas) {
+    public void setPuanyas(Long puanyas) {
         this.puanyas = puanyas;
     }
 
@@ -125,5 +128,35 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
     public void setTahvil(Tahvil Tahvil) {
         this.Tahvil = Tahvil;
     }
+
+    public Long getPuanegitim() {
+        return puanegitim;
+    }
+
+    public void setPuanegitim(Long puanegitim) {
+        this.puanegitim = puanegitim;
+    }
+
+    public String getMeslek() {
+        return meslek;
+    }
+
+    public void setMeslek(String meslek) {
+        this.meslek = meslek;
+    }
+
+    public Long getPuanyatirim() {
+        return puanyatirim;
+    }
+
+    public void setPuanyatirim(Long puanyatirim) {
+        this.puanyatirim = puanyatirim;
+    }
+    
+    
+    
+    
+    
+    
 
 }
