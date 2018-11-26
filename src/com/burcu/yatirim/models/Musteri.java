@@ -19,6 +19,7 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
     private Long puanyas;
     private Long puanegitim;
     private Long puanyatirim;
+    private Long puangetiri;
     private String meslek;
     private Hesap Hesap;
     private Faiz Faiz;
@@ -152,6 +153,16 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
     public void setPuanyatirim(Long puanyatirim) {
         this.puanyatirim = puanyatirim;
     }
+
+    public Long getPuangetiri() {
+        return puangetiri;
+    }
+
+    public void setPuangetiri(Long puangetiri) {
+        this.puangetiri = puangetiri;
+    }
+    
+    
     
     
     

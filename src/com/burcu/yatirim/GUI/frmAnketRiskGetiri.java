@@ -5,6 +5,9 @@
  */
 package com.burcu.yatirim.GUI;
 
+import com.burcu.yatirim.dal.MusteriDAO;
+import com.burcu.yatirim.models.Musteri;
+
 /**
  *
  * @author User
@@ -14,6 +17,9 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
     /**
      * Creates new form frmAnketRiskGetiri
      */
+    
+    MusteriDAO db = new MusteriDAO();
+    
     public frmAnketRiskGetiri() {
         initComponents();
     }
@@ -185,7 +191,12 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton26ActionPerformed
 
     private void btnAnketRiskGetiriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnketRiskGetiriActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:        
+        Long getiri = Long.parseLong(jLabelPuanHesap1.getText());
+        Musteri mst = new Musteri();        
+        mst.setPuangetiri(getiri);
+        db.UpdatePuanGetiri(mst);
+        
         new frmAnketSonuc().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnAnketRiskGetiriActionPerformed

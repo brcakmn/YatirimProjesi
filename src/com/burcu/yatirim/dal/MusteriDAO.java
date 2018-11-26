@@ -148,6 +148,18 @@ public class MusteriDAO {
         }
         closeSession();
     }
+    
+    public void UpdatePuanGetiri(Musteri mst) {
+        openSession();
+        try {
+            String query = "UPDATE musteri SET puangetiri='" + mst.getPuangetiri()+ "' WHERE id= '" + getLastId() + "'";
+            ps = conn.prepareStatement(query);
+            ps.executeUpdate();            
+        } catch (Exception ex) {
+            System.out.println("Error: " + ex.toString());
+        }
+        closeSession();
+    }
 
     public Connection getConn() {
         return conn;
