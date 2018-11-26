@@ -195,6 +195,7 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
         Long getiri = Long.parseLong(jLabelPuanHesap1.getText());
         Musteri mst = new Musteri();        
         mst.setPuangetiri(getiri);
+        
         db.UpdatePuanGetiri(mst);
         
         new frmAnketSonuc().setVisible(true);

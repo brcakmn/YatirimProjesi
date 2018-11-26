@@ -61,7 +61,6 @@ public class MusteriDAO {
 //        closeSession();
 //        return id;
 //    }
-
     public void Save(Musteri mst) {
         openSession();
         try {
@@ -84,8 +83,8 @@ public class MusteriDAO {
         }
         closeSession();
     }
-    
-    public int getLastId(){
+
+    public int getLastId() {
         openSession();
         int getLastId = 0;
         String query = "SELECT MAX(ID) FROM MUSTERI";
@@ -106,59 +105,80 @@ public class MusteriDAO {
         try {
             String query = "UPDATE musteri SET puanyas='" + mst.getPuanyas() + "' WHERE id= '" + getLastId() + "'";
             ps = conn.prepareStatement(query);
-            ps.executeUpdate();            
+            ps.executeUpdate();
         } catch (Exception ex) {
             System.out.println("Error: " + ex.toString());
         }
         closeSession();
     }
-    
+
     public void UpdatePuanEgitim(Musteri mst) {
         openSession();
         try {
-            String query = "UPDATE musteri SET puanegitim='" + mst.getPuanegitim()+ "' WHERE id= '" + getLastId() + "'";
+            String query = "UPDATE musteri SET puanegitim='" + mst.getPuanegitim() + "' WHERE id= '" + getLastId() + "'";
             ps = conn.prepareStatement(query);
-            ps.executeUpdate();            
+            ps.executeUpdate();
         } catch (Exception ex) {
             System.out.println("Error: " + ex.toString());
         }
         closeSession();
     }
-    
+
     public void UpdatePuanMeslek(Musteri mst) {
         openSession();
         try {
-            String query = "UPDATE musteri SET meslek='" + mst.getMeslek()+ "' WHERE id= '" + getLastId() + "'";
+            String query = "UPDATE musteri SET meslek='" + mst.getMeslek() + "' WHERE id= '" + getLastId() + "'";
             ps = conn.prepareStatement(query);
-            ps.executeUpdate();            
+            ps.executeUpdate();
         } catch (Exception ex) {
             System.out.println("Error: " + ex.toString());
         }
         closeSession();
     }
-    
+
     public void UpdatePuanYatirim(Musteri mst) {
         openSession();
         try {
-            String query = "UPDATE musteri SET puanyatirim='" + mst.getPuanyatirim()+ "' WHERE id= '" + getLastId() + "'";
+            String query = "UPDATE musteri SET puanyatirim='" + mst.getPuanyatirim() + "' WHERE id= '" + getLastId() + "'";
             ps = conn.prepareStatement(query);
-            ps.executeUpdate();            
+            ps.executeUpdate();
         } catch (Exception ex) {
             System.out.println("Error: " + ex.toString());
         }
         closeSession();
     }
-    
+
     public void UpdatePuanGetiri(Musteri mst) {
         openSession();
         try {
-            String query = "UPDATE musteri SET puangetiri='" + mst.getPuangetiri()+ "' WHERE id= '" + getLastId() + "'";
+            String query = "UPDATE musteri SET puangetiri='" + mst.getPuangetiri() + "' WHERE id= '" + getLastId() + "'";
             ps = conn.prepareStatement(query);
-            ps.executeUpdate();            
+            ps.executeUpdate();
         } catch (Exception ex) {
             System.out.println("Error: " + ex.toString());
         }
         closeSession();
+    }
+
+    public int getToplam() {
+        openSession();
+        int getToplam = 0;
+        String query = "SELECT "
+                + "COALESCE(puanyas,0) "
+                + "+ COALESCE(puanegitim,0) "
+                + "+ COALESCE(puanyatirim,0) "
+                + "+ COALESCE(puangetiri,0)"
+                + "FROM musteri where id = '" + getLastId() + "'";
+        try {
+            ps = conn.prepareCall(query);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                getToplam = (int) rs.getLong(1);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(MusteriDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return getToplam;
     }
 
     public Connection getConn() {
