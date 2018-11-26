@@ -358,7 +358,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
             System.exit(0);
         }
         else{
-            new frmAnketToplam().setVisible(true);
+            new frmAnketHesap().setVisible(true);
         }
     }//GEN-LAST:event_btnAnketSonucActionPerformed
 
