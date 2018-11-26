@@ -25,6 +25,23 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         int toplam = db.getToplam();
         jTextField2.setText(String.valueOf(toplam));
         
+        if(toplam >= 0 && toplam <= 20){
+            jRadioButton23.setSelected(true);
+        }
+        else if(toplam >= 21 && toplam <= 35){
+            jRadioButton22.setSelected(true);
+        }
+        else if(toplam >= 36 && toplam <= 50){
+            jRadioButton24.setSelected(true);
+        }
+        else if(toplam >= 51 && toplam <= 75){
+            jRadioButton26.setSelected(true);
+        }
+        else if(toplam >= 76 && toplam <= 100){
+            jRadioButton25.setSelected(true);
+        }
+        
+        
     }
     
     
@@ -38,6 +55,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel6 = new javax.swing.JPanel();
         jLabelPuanHesap4 = new javax.swing.JLabel();
         jRadioButton22 = new javax.swing.JRadioButton();
@@ -80,6 +98,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel6.add(jLabelPuanHesap4, new org.netbeans.lib.awtextra.AbsoluteConstraints(731, 114, 48, 62));
 
+        buttonGroup1.add(jRadioButton22);
         jRadioButton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton22ActionPerformed(evt);
@@ -87,6 +106,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         });
         jPanel6.add(jRadioButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, -1, -1));
 
+        buttonGroup1.add(jRadioButton23);
         jRadioButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton23ActionPerformed(evt);
@@ -94,6 +114,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         });
         jPanel6.add(jRadioButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 50, -1, -1));
 
+        buttonGroup1.add(jRadioButton24);
         jRadioButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton24ActionPerformed(evt);
@@ -101,6 +122,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         });
         jPanel6.add(jRadioButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, -1));
 
+        buttonGroup1.add(jRadioButton25);
         jRadioButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton25ActionPerformed(evt);
@@ -169,6 +191,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         jLabel10.setText("100");
         jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 270, 40, -1));
 
+        buttonGroup1.add(jRadioButton26);
         jRadioButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton26ActionPerformed(evt);
@@ -176,6 +199,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         });
         jPanel6.add(jRadioButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, -1, -1));
 
+        buttonGroup1.add(jRadioButton27);
         jRadioButton27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton27ActionPerformed(evt);
@@ -183,6 +207,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         });
         jPanel6.add(jRadioButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, -1, -1));
 
+        buttonGroup1.add(jRadioButton28);
         jRadioButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton28ActionPerformed(evt);
@@ -190,6 +215,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         });
         jPanel6.add(jRadioButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 50, -1, -1));
 
+        buttonGroup1.add(jRadioButton29);
         jRadioButton29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton29ActionPerformed(evt);
@@ -197,6 +223,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         });
         jPanel6.add(jRadioButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 150, -1, -1));
 
+        buttonGroup1.add(jRadioButton30);
         jRadioButton30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton30ActionPerformed(evt);
@@ -206,8 +233,9 @@ public class frmAnketSonuc extends javax.swing.JFrame {
 
         lblPuan12.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblPuan12.setText("Uygun Değil");
-        jPanel6.add(lblPuan12, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 80, -1));
+        jPanel6.add(lblPuan12, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, 80, -1));
 
+        buttonGroup1.add(jRadioButton31);
         jRadioButton31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton31ActionPerformed(evt);
@@ -216,6 +244,11 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         jPanel6.add(jRadioButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 210, -1, -1));
 
         btnAnketSonuc.setText("İleri");
+        btnAnketSonuc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAnketSonucActionPerformed(evt);
+            }
+        });
 
         jLabel11.setText("Toplam Puan");
 
@@ -261,7 +294,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jRadioButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton22ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:        
     }//GEN-LAST:event_jRadioButton22ActionPerformed
 
     private void jRadioButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton23ActionPerformed
@@ -281,30 +314,53 @@ public class frmAnketSonuc extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton26ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-        int toplam = db.getToplam();
-        jLabel11.setText(String.valueOf(toplam));
+        // TODO add your handling code here:        
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jRadioButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton27ActionPerformed
         // TODO add your handling code here:
+        if(jRadioButton27.isSelected()){
+            btnAnketSonuc.setText("Bitir");
+        }
     }//GEN-LAST:event_jRadioButton27ActionPerformed
 
     private void jRadioButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton28ActionPerformed
         // TODO add your handling code here:
+        if(jRadioButton28.isSelected()){
+            btnAnketSonuc.setText("Bitir");
+        }
     }//GEN-LAST:event_jRadioButton28ActionPerformed
 
     private void jRadioButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton29ActionPerformed
         // TODO add your handling code here:
+        if(jRadioButton29.isSelected()){
+            btnAnketSonuc.setText("Bitir");
+        }
     }//GEN-LAST:event_jRadioButton29ActionPerformed
 
     private void jRadioButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton30ActionPerformed
         // TODO add your handling code here:
+        if(jRadioButton30.isSelected()){
+            btnAnketSonuc.setText("Bitir");
+        }
     }//GEN-LAST:event_jRadioButton30ActionPerformed
 
     private void jRadioButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton31ActionPerformed
         // TODO add your handling code here:
+        if(jRadioButton31.isSelected()){
+            btnAnketSonuc.setText("Bitir");
+        }
     }//GEN-LAST:event_jRadioButton31ActionPerformed
+
+    private void btnAnketSonucActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnketSonucActionPerformed
+        // TODO add your handling code here:
+        if(btnAnketSonuc.getText().equals("Bitir")){
+            System.exit(0);
+        }
+        else{
+            new frmAnketToplam().setVisible(true);
+        }
+    }//GEN-LAST:event_btnAnketSonucActionPerformed
 
     /**
      * @param args the command line arguments
@@ -343,6 +399,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAnketSonuc;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
