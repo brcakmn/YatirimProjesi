@@ -6,7 +6,6 @@
 package com.burcu.yatirim.GUI;
 
 import com.burcu.yatirim.dal.MusteriDAO;
-import com.burcu.yatirim.models.Musteri;
 
 /**
  *

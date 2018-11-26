@@ -25,8 +25,8 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
     private Faiz Faiz;
     private Doviz Doviz;
     private Tahvil Tahvil;
-    //müsteri için costructur tanýmladým burada müþteri herhangi bir hesabý kullanabilir 
-    //ya da sadece birini ya da hepsine birden parasýný yatýrabilir.
+    //müsteri için costructur tanımladım burada müşteri herhangi bir hesabı kullanabilir
+    //ya da sadece birini ya da hepsine birden parasını yatırabilir
 
     public Musteri() {
     }
@@ -37,14 +37,14 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
         Faiz = f;
         Doviz = d;
         Tahvil = t;
-        System.out.println("***********MÜÞTERÝ**************");
-        System.out.println("Musterinin Danismana verdigi para= " + h.getAnaPara());
-        System.out.println("Faize yatirilan Para= " + Faiz.getAnaPara());
-        System.out.println("faizden kazanilan Para= " + Faiz.getiri());
-        System.out.println("Dovize yatirilan Para= " + Doviz.getAnaPara());
-        System.out.println("dovizden kazanilan Para= " + Doviz.getiri());
-        System.out.println("Tahvile yatirilan Para= " + Tahvil.getAnaPara());
-        System.out.println("tahvilden kazanilan Para= " + Tahvil.getiri());
+        System.out.println("***********MÜŞTERİ**************");
+        System.out.println("Müşterinin Danışmana Verdiği Para= " + h.getAnaPara());
+        System.out.println("Faize Yatırılan Para= " + Faiz.getAnaPara());
+        System.out.println("Faizden Kazanılan Para= " + Faiz.getiri());
+        System.out.println("Dövüze Yatırılan Para= " + Doviz.getAnaPara());
+        System.out.println("Dövizden Kazanılan Para= " + Doviz.getiri());
+        System.out.println("Tahvile Yatırılan Para= " + Tahvil.getAnaPara());
+        System.out.println("Tahvilden Kazanılan Para= " + Tahvil.getiri());
         System.out.println();
         System.out.println();
         System.out.println();

@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author burcu
  */
-public class Hesap extends Object {//HESAP CLASSI AÇIP DEGÝSKENLERÝ TANIMLADIM
+public class Hesap extends Object {//HESAP CLASSI AÇIP DEĞİŞKENLERİ TANIMLADIM
 
     private String hesapAdi;
     private double anaPara;
@@ -67,16 +67,12 @@ public class Hesap extends Object {//HESAP CLASSI AÇIP DEGÝSKENLERÝ TANIMLADI
     public void setKfiyat(double kfiyat) {
         this.kfiyat = kfiyat;
     }
-    
-    
-
-    
 
     public double getiri() {
         return anaPara;
     }
 
-    public long gun() {//iki tarih arasýndaki farký gün olarak bulan fonksiyon yazdým
+    public long gun() {//iki tarih arasındaki farkı gün olarak bulan methodu yazdım
         long fark = ktarih.getTime() - atarih.getTime();
         fark = fark / (1000 * 60 * 60 * 24);
         return fark;
