@@ -27,6 +27,7 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
         jLabelPuanHesap1 = new javax.swing.JLabel();
         lbl19 = new javax.swing.JLabel();
@@ -44,10 +45,13 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
         btnAnketRiskGetiri = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Yatırım Değerlendirme");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(" Risk ve getiri tercihiniz nedir?"));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel2.add(jLabelPuanHesap1, new org.netbeans.lib.awtextra.AbsoluteConstraints(731, 114, 48, 62));
+
+        jLabelPuanHesap1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jPanel2.add(jLabelPuanHesap1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 130, 48, 62));
 
         lbl19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl19.setText("<html>Olabildiğince riskten kaçınır, güvenli yatırım araçlarını tercih eder, az ama düzenli bir getiri sağlamayı tercih ederim. (Anaparam aynen korunsun)</html>");
@@ -56,6 +60,7 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
         lbl19.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanel2.add(lbl19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 440, 40));
 
+        buttonGroup1.add(jRadioButton7);
         jRadioButton7.setText("15");
         jRadioButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,6 +69,7 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
         });
         jPanel2.add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, -1, 30));
 
+        buttonGroup1.add(jRadioButton8);
         jRadioButton8.setText("10");
         jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,6 +78,7 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
         });
         jPanel2.add(jRadioButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 40, -1, 30));
 
+        buttonGroup1.add(jRadioButton9);
         jRadioButton9.setText("20");
         jRadioButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,6 +87,7 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
         });
         jPanel2.add(jRadioButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, 30));
 
+        buttonGroup1.add(jRadioButton10);
         jRadioButton10.setText("40");
         jRadioButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,6 +116,7 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
         lbl73.setText("<html>Yüksek getiri beklentisiyle, yüksek riskli ürünlere yatırım yapabilirim (Anaparadan kaybetmeyi göze alabilirim)</html>");
         jPanel2.add(lbl73, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 440, 40));
 
+        buttonGroup1.add(jRadioButton26);
         jRadioButton26.setText("30");
         jRadioButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,6 +126,11 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
         jPanel2.add(jRadioButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, -1, 30));
 
         btnAnketRiskGetiri.setText("İleri");
+        btnAnketRiskGetiri.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAnketRiskGetiriActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,23 +161,34 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
 
     private void jRadioButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton7ActionPerformed
         // TODO add your handling code here:
+        jLabelPuanHesap1.setText(jRadioButton7.getText());
     }//GEN-LAST:event_jRadioButton7ActionPerformed
 
     private void jRadioButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton8ActionPerformed
         // TODO add your handling code here:
+        jLabelPuanHesap1.setText(jRadioButton8.getText());
     }//GEN-LAST:event_jRadioButton8ActionPerformed
 
     private void jRadioButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton9ActionPerformed
         // TODO add your handling code here:
+        jLabelPuanHesap1.setText(jRadioButton9.getText());
     }//GEN-LAST:event_jRadioButton9ActionPerformed
 
     private void jRadioButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton10ActionPerformed
         // TODO add your handling code here:
+        jLabelPuanHesap1.setText(jRadioButton10.getText());
     }//GEN-LAST:event_jRadioButton10ActionPerformed
 
     private void jRadioButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton26ActionPerformed
         // TODO add your handling code here:
+        jLabelPuanHesap1.setText(jRadioButton26.getText());
     }//GEN-LAST:event_jRadioButton26ActionPerformed
+
+    private void btnAnketRiskGetiriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnketRiskGetiriActionPerformed
+        // TODO add your handling code here:
+        new frmAnketSonuc().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnAnketRiskGetiriActionPerformed
 
     /**
      * @param args the command line arguments
@@ -202,6 +227,7 @@ public class frmAnketRiskGetiri extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAnketRiskGetiri;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabelPuanHesap1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JRadioButton jRadioButton10;

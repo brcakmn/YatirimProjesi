@@ -27,6 +27,7 @@ public class frmAnketMeslek extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel3 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -36,6 +37,7 @@ public class frmAnketMeslek extends javax.swing.JFrame {
         btnAnketMeslek = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Yatırım Değerlendirme");
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Mesleğiniz"));
 
@@ -43,8 +45,10 @@ public class frmAnketMeslek extends javax.swing.JFrame {
 
         jLabel2.setText("Ticari Faaliyet: ");
 
+        buttonGroup1.add(jRadioButton11);
         jRadioButton11.setText("Var");
 
+        buttonGroup1.add(jRadioButton12);
         jRadioButton12.setText("Yok");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -160,6 +164,7 @@ public class frmAnketMeslek extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAnketMeslek;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel3;

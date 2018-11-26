@@ -43,10 +43,13 @@ public class frmAnketEgitimDurumu extends javax.swing.JFrame {
         btnAnketEgitimDurumu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Yatırım Değerlendirme");
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Eğitim Durumunuz"));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel4.add(jLabelPuanHesap2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 80, 48, 62));
+
+        jLabelPuanHesap2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jPanel4.add(jLabelPuanHesap2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 50, 48, 62));
 
         lbl20.setText("İlköğretim");
         jPanel4.add(lbl20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 70, -1));
@@ -140,18 +143,22 @@ public class frmAnketEgitimDurumu extends javax.swing.JFrame {
 
     private void jRadioButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton13ActionPerformed
         // TODO add your handling code here:
+        jLabelPuanHesap2.setText(jRadioButton13.getText());
     }//GEN-LAST:event_jRadioButton13ActionPerformed
 
     private void jRadioButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton14ActionPerformed
         // TODO add your handling code here:
+        jLabelPuanHesap2.setText(jRadioButton14.getText());
     }//GEN-LAST:event_jRadioButton14ActionPerformed
 
     private void jRadioButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton15ActionPerformed
         // TODO add your handling code here:
+        jLabelPuanHesap2.setText(jRadioButton15.getText());
     }//GEN-LAST:event_jRadioButton15ActionPerformed
 
     private void jRadioButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton17ActionPerformed
         // TODO add your handling code here:
+        jLabelPuanHesap2.setText(jRadioButton17.getText());
     }//GEN-LAST:event_jRadioButton17ActionPerformed
 
     private void btnAnketEgitimDurumuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnketEgitimDurumuActionPerformed

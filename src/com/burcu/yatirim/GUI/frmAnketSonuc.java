@@ -35,7 +35,6 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         jRadioButton25 = new javax.swing.JRadioButton();
         lbl35 = new javax.swing.JLabel();
         lbl74 = new javax.swing.JLabel();
-        lblPuan8 = new javax.swing.JLabel();
         lblPuan9 = new javax.swing.JLabel();
         lbl75 = new javax.swing.JLabel();
         lbl22 = new javax.swing.JLabel();
@@ -56,6 +55,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         btnAnketSonuc = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Yatırım Değerlendirme");
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("Test sonucu size uygun bulunan ürün ve hizmetler"));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -66,38 +66,34 @@ public class frmAnketSonuc extends javax.swing.JFrame {
                 jRadioButton22ActionPerformed(evt);
             }
         });
-        jPanel6.add(jRadioButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, -1, -1));
+        jPanel6.add(jRadioButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, -1, -1));
 
         jRadioButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton23ActionPerformed(evt);
             }
         });
-        jPanel6.add(jRadioButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 50, -1, -1));
+        jPanel6.add(jRadioButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, -1, -1));
 
         jRadioButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton24ActionPerformed(evt);
             }
         });
-        jPanel6.add(jRadioButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, -1));
+        jPanel6.add(jRadioButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, -1, -1));
 
         jRadioButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton25ActionPerformed(evt);
             }
         });
-        jPanel6.add(jRadioButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 270, -1, -1));
+        jPanel6.add(jRadioButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, -1, -1));
 
         lbl35.setText("<html>Düşük Riskli (Hazine Bonosu, Devlet Tahvili, Hazine Kira Sertifikaları, Yatırımcı  Bilgi Formunda Risk Değeri 2 ve 3 olan yatırım fonları, vb.)</html>");
         jPanel6.add(lbl35, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 410, 40));
 
         lbl74.setText("<html>Çok Yüksek Riskli (Tezgahüstü Türev İşlemler, Yapılandırılmış Borçlanma Araçları, Kaldıraçlı Alım Satım İşlemleri - FX, Yatırımcı Bilgi Formunda Risk Değeri 7 olan  yatırım fonları vb.)</html>");
         jPanel6.add(lbl74, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 410, 70));
-
-        lblPuan8.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblPuan8.setText("Uygun Değil");
-        jPanel6.add(lblPuan8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 80, -1));
 
         lblPuan9.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblPuan9.setText("Min");
@@ -117,8 +113,8 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         jPanel6.add(lbl55, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 400, 60));
 
         lblPuan10.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblPuan10.setText("Uygun");
-        jPanel6.add(lblPuan10, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, 136, -1));
+        lblPuan10.setText("Durum");
+        jPanel6.add(lblPuan10, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 20, 50, -1));
 
         lblPuan11.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblPuan11.setText("Max");
@@ -159,7 +155,7 @@ public class frmAnketSonuc extends javax.swing.JFrame {
                 jRadioButton26ActionPerformed(evt);
             }
         });
-        jPanel6.add(jRadioButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, -1, -1));
+        jPanel6.add(jRadioButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, -1, -1));
 
         btnAnketSonuc.setText("İleri");
 
@@ -271,7 +267,6 @@ public class frmAnketSonuc extends javax.swing.JFrame {
     private javax.swing.JLabel lbl75;
     private javax.swing.JLabel lblPuan10;
     private javax.swing.JLabel lblPuan11;
-    private javax.swing.JLabel lblPuan8;
     private javax.swing.JLabel lblPuan9;
     // End of variables declaration//GEN-END:variables
 }

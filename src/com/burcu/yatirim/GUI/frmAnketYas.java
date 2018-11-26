@@ -45,6 +45,7 @@ public class frmAnketYas extends javax.swing.JFrame {
         btnAnketYas = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Yatırım Değerlendirme");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Yaşınız"));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -71,6 +72,8 @@ public class frmAnketYas extends javax.swing.JFrame {
         lblPuan1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblPuan1.setText("Puan");
         jPanel1.add(lblPuan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, 70, -1));
+
+        jLabelPuanHesap.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jPanel1.add(jLabelPuanHesap, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 70, 48, 62));
 
         lbl18.setText("18-30 Yaş");
