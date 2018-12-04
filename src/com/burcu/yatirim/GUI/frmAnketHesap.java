@@ -137,44 +137,44 @@ public class frmAnketHesap extends javax.swing.JFrame {
         getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
 
         txtAnaPara.setText("<html>Yatırım olarak değerlendirmek istediğiniz Anapara tutarı:</html>");
-        getContentPane().add(txtAnaPara, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 150, 40));
+        getContentPane().add(txtAnaPara, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 150, 50));
 
         txtFieldAnaPara.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFieldAnaParaActionPerformed(evt);
             }
         });
-        getContentPane().add(txtFieldAnaPara, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 170, -1));
+        getContentPane().add(txtFieldAnaPara, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 80, 170, -1));
 
         txtFaiz.setText("<html>Anaparanın Faiz'e yatırılmak istenen tutarı:</html>");
-        getContentPane().add(txtFaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 150, -1));
+        getContentPane().add(txtFaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 150, 40));
 
         txtFieldFaiz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFieldFaizActionPerformed(evt);
             }
         });
-        getContentPane().add(txtFieldFaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 170, -1));
+        getContentPane().add(txtFieldFaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 130, 170, -1));
 
         txtDoviz.setText("<html>Anaparanın Döviz'e yatırılmak istenen tutarı:</html>");
-        getContentPane().add(txtDoviz, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 150, 30));
+        getContentPane().add(txtDoviz, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 150, 40));
 
         txtFieldDoviz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFieldDovizActionPerformed(evt);
             }
         });
-        getContentPane().add(txtFieldDoviz, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 170, -1));
+        getContentPane().add(txtFieldDoviz, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 170, -1));
 
         txtTahvil.setText("<html>Anaparanın Tahvil'e yatırılmak istenen tutarı:</html>");
-        getContentPane().add(txtTahvil, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 140, -1));
+        getContentPane().add(txtTahvil, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 140, 30));
 
         txtFieldTahvil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFieldTahvilActionPerformed(evt);
             }
         });
-        getContentPane().add(txtFieldTahvil, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 170, -1));
+        getContentPane().add(txtFieldTahvil, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 170, -1));
 
         jButtonHesapla.setText("Hesapla");
         jButtonHesapla.addActionListener(new java.awt.event.ActionListener() {
@@ -230,7 +230,8 @@ public class frmAnketHesap extends javax.swing.JFrame {
 
     private void jButtonHesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonHesaplaActionPerformed
         // TODO add your handling code here:
-        Hesapla();               
+        Hesapla();     
+        this.dispose();
     }//GEN-LAST:event_jButtonHesaplaActionPerformed
 
     public double FaizHesap() {

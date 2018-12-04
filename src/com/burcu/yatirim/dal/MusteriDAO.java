@@ -28,7 +28,7 @@ public class MusteriDAO {
 
     private final String url = "jdbc:postgresql://localhost:5432/yatirim";
     private final String username = "postgres";
-    private final String password = "root";
+    private final String password = "burcu";
 
     public void openSession() {
         try {
