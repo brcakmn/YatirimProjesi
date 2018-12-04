@@ -230,7 +230,7 @@ public class frmAnketHesap extends javax.swing.JFrame {
 
     private void jButtonHesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonHesaplaActionPerformed
         // TODO add your handling code here:
-        Hesapla();     
+        Hesapla();
         this.dispose();
     }//GEN-LAST:event_jButtonHesaplaActionPerformed
 
@@ -253,8 +253,8 @@ public class frmAnketHesap extends javax.swing.JFrame {
         double anaparaDeger = Integer.parseInt(txtFieldAnaPara.getText());
         return anaparaDeger;
     }
-    
-    public void Hesapla(){
+
+    public void Hesapla() {
         if (AnaParaHesap() == FaizHesap() + DovizHesap() + TahvilHesap()) {
 
             Date ilk = new GregorianCalendar(2007, 10, 12).getTime();
@@ -266,7 +266,6 @@ public class frmAnketHesap extends javax.swing.JFrame {
             Doviz dvz = new Doviz("döviz hesabı", DovizHesap(), ilk, son, 5, 1.5);
             Musteri Musteri = new Musteri("musteri", Hesap, kar, dvz, Tahvil);
 
-            
             JOptionPane.showMessageDialog(null, "Müşterinin Danışmana Verdiği Para= " + Hesap.getAnaPara()
                     + " \n" + "Faize Yatırılan Para= " + kar.getAnaPara()
                     + " \n" + "Faizden Kazanılan Para= " + kar.getiri()
@@ -276,10 +275,11 @@ public class frmAnketHesap extends javax.swing.JFrame {
                     + " \n" + "Tahvilden Kazanılan Para= " + Tahvil.getiri(), "Hesaplama", HEIGHT);
 
         } else {
-            JOptionPane.showConfirmDialog(null, "Yatırım olarak ayrımlarınızın toplamı Anapara miktarını tutmalıdır.",
-                    "HATA", JOptionPane.ERROR_MESSAGE);
+            Object[] options = {"Yes, please", "No way!"};
+            JOptionPane.showOptionDialog(rootPane, "Yatırım olarak ayrımlarınızın toplamı Anapara miktarını tutmalıdır.",
+                    "HATA", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
         }
-        
+
     }
 
     /**
