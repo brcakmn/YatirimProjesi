@@ -37,17 +37,17 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
         Faiz = f;
         Doviz = d;
         Tahvil = t;
-        System.out.println("***********MÜŞTERİ**************");
-        System.out.println("Müşterinin Danışmana Verdiği Para= " + h.getAnaPara());
-        System.out.println("Faize Yatırılan Para= " + Faiz.getAnaPara());
-        System.out.println("Faizden Kazanılan Para= " + Faiz.getiri());
-        System.out.println("Dövüze Yatırılan Para= " + Doviz.getAnaPara());
-        System.out.println("Dövizden Kazanılan Para= " + Doviz.getiri());
-        System.out.println("Tahvile Yatırılan Para= " + Tahvil.getAnaPara());
-        System.out.println("Tahvilden Kazanılan Para= " + Tahvil.getiri());
-        System.out.println();
-        System.out.println();
-        System.out.println();
+//        System.out.println("***********MÜŞTERİ**************");
+//        System.out.println("Müşterinin Danışmana Verdiği Para= " + h.getAnaPara());
+//        System.out.println("Faize Yatırılan Para= " + Faiz.getAnaPara());
+//        System.out.println("Faizden Kazanılan Para= " + Faiz.getiri());
+//        System.out.println("Dövüze Yatırılan Para= " + Doviz.getAnaPara());
+//        System.out.println("Dövizden Kazanılan Para= " + Doviz.getiri());
+//        System.out.println("Tahvile Yatırılan Para= " + Tahvil.getAnaPara());
+//        System.out.println("Tahvilden Kazanılan Para= " + Tahvil.getiri());
+//        System.out.println();
+//        System.out.println();
+//        System.out.println();
     }
 
     public Long getId() {

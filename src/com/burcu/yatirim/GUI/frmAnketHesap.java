@@ -6,6 +6,14 @@
 package com.burcu.yatirim.GUI;
 
 import com.burcu.yatirim.dal.MusteriDAO;
+import com.burcu.yatirim.models.Doviz;
+import com.burcu.yatirim.models.Faiz;
+import com.burcu.yatirim.models.Hesap;
+import com.burcu.yatirim.models.Musteri;
+import com.burcu.yatirim.models.Tahvil;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -45,12 +53,19 @@ public class frmAnketHesap extends javax.swing.JFrame {
         lbl72 = new javax.swing.JLabel();
         lblPuan6 = new javax.swing.JLabel();
         lblPuan7 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        txtAnaPara = new javax.swing.JLabel();
+        txtFieldAnaPara = new javax.swing.JTextField();
+        txtFaiz = new javax.swing.JLabel();
+        txtFieldFaiz = new javax.swing.JTextField();
+        txtDoviz = new javax.swing.JLabel();
+        txtFieldDoviz = new javax.swing.JTextField();
+        txtTahvil = new javax.swing.JLabel();
+        txtFieldTahvil = new javax.swing.JTextField();
+        jButtonHesapla = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(840, 1050));
-        setPreferredSize(new java.awt.Dimension(840, 1050));
+        setTitle("Yatırım Değerlendirme");
+        setPreferredSize(new java.awt.Dimension(798, 378));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButtonSon.setText("Son");
@@ -121,9 +136,53 @@ public class frmAnketHesap extends javax.swing.JFrame {
 
         getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
 
-        jLabel3.setText("Toplam Puan");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 135, -1));
+        txtAnaPara.setText("<html>Yatırım olarak değerlendirmek istediğiniz Anapara tutarı:</html>");
+        getContentPane().add(txtAnaPara, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 150, 40));
+
+        txtFieldAnaPara.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFieldAnaParaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtFieldAnaPara, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 170, -1));
+
+        txtFaiz.setText("<html>Anaparanın Faiz'e yatırılmak istenen tutarı:</html>");
+        getContentPane().add(txtFaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 150, -1));
+
+        txtFieldFaiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFieldFaizActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtFieldFaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 170, -1));
+
+        txtDoviz.setText("<html>Anaparanın Döviz'e yatırılmak istenen tutarı:</html>");
+        getContentPane().add(txtDoviz, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 150, 30));
+
+        txtFieldDoviz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFieldDovizActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtFieldDoviz, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 170, -1));
+
+        txtTahvil.setText("<html>Anaparanın Tahvil'e yatırılmak istenen tutarı:</html>");
+        getContentPane().add(txtTahvil, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 140, -1));
+
+        txtFieldTahvil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFieldTahvilActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtFieldTahvil, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 170, -1));
+
+        jButtonHesapla.setText("Hesapla");
+        jButtonHesapla.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonHesaplaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonHesapla, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -148,6 +207,79 @@ public class frmAnketHesap extends javax.swing.JFrame {
     private void jRadioButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton21ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton21ActionPerformed
+
+    private void txtFieldAnaParaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFieldAnaParaActionPerformed
+        // TODO add your handling code here:       
+        AnaParaHesap();
+    }//GEN-LAST:event_txtFieldAnaParaActionPerformed
+
+    private void txtFieldFaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFieldFaizActionPerformed
+        // TODO add your handling code here:
+        FaizHesap();
+    }//GEN-LAST:event_txtFieldFaizActionPerformed
+
+    private void txtFieldDovizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFieldDovizActionPerformed
+        // TODO add your handling code here:
+        DovizHesap();
+    }//GEN-LAST:event_txtFieldDovizActionPerformed
+
+    private void txtFieldTahvilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFieldTahvilActionPerformed
+        // TODO add your handling code here:
+        TahvilHesap();
+    }//GEN-LAST:event_txtFieldTahvilActionPerformed
+
+    private void jButtonHesaplaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonHesaplaActionPerformed
+        // TODO add your handling code here:
+        Hesapla();               
+    }//GEN-LAST:event_jButtonHesaplaActionPerformed
+
+    public double FaizHesap() {
+        double faizDeger = Integer.parseInt(txtFieldFaiz.getText());
+        return faizDeger;
+    }
+
+    public double DovizHesap() {
+        double dovizDeger = Integer.parseInt(txtFieldDoviz.getText());
+        return dovizDeger;
+    }
+
+    public double TahvilHesap() {
+        double tahvilDeger = Integer.parseInt(txtFieldTahvil.getText());
+        return tahvilDeger;
+    }
+
+    public double AnaParaHesap() {
+        double anaparaDeger = Integer.parseInt(txtFieldAnaPara.getText());
+        return anaparaDeger;
+    }
+    
+    public void Hesapla(){
+        if (AnaParaHesap() == FaizHesap() + DovizHesap() + TahvilHesap()) {
+
+            Date ilk = new GregorianCalendar(2007, 10, 12).getTime();
+            Date son = new GregorianCalendar(2007, 10, 30).getTime();
+
+            Hesap Hesap = new Hesap("hesap", AnaParaHesap(), ilk, son);
+            Faiz kar = new Faiz("faiz hesabı", FaizHesap(), ilk, son, 10);
+            Tahvil Tahvil = new Tahvil("tahvil hesabı", TahvilHesap(), ilk, son, 2);
+            Doviz dvz = new Doviz("döviz hesabı", DovizHesap(), ilk, son, 5, 1.5);
+            Musteri Musteri = new Musteri("musteri", Hesap, kar, dvz, Tahvil);
+
+            
+            JOptionPane.showMessageDialog(null, "Müşterinin Danışmana Verdiği Para= " + Hesap.getAnaPara()
+                    + " \n" + "Faize Yatırılan Para= " + kar.getAnaPara()
+                    + " \n" + "Faizden Kazanılan Para= " + kar.getiri()
+                    + " \n" + "Dövize Yatırılan Para= " + dvz.getAnaPara()
+                    + " \n" + "Dövizden Kazanılan Para= " + dvz.getiri()
+                    + " \n" + "Tahvile Yatırılan Para= " + Tahvil.getAnaPara()
+                    + " \n" + "Tahvilden Kazanılan Para= " + Tahvil.getiri(), "Hesaplama", HEIGHT);
+
+        } else {
+            JOptionPane.showConfirmDialog(null, "Yatırım olarak ayrımlarınızın toplamı Anapara miktarını tutmalıdır.",
+                    "HATA", JOptionPane.ERROR_MESSAGE);
+        }
+        
+    }
 
     /**
      * @param args the command line arguments
@@ -190,20 +322,27 @@ public class frmAnketHesap extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton jButtonHesapla;
     private javax.swing.JButton jButtonSon;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelPuanHesap3;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JRadioButton jRadioButton18;
     private javax.swing.JRadioButton jRadioButton19;
     private javax.swing.JRadioButton jRadioButton20;
     private javax.swing.JRadioButton jRadioButton21;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JLabel lbl21;
     private javax.swing.JLabel lbl34;
     private javax.swing.JLabel lbl54;
     private javax.swing.JLabel lbl72;
     private javax.swing.JLabel lblPuan6;
     private javax.swing.JLabel lblPuan7;
+    private javax.swing.JLabel txtAnaPara;
+    private javax.swing.JLabel txtDoviz;
+    private javax.swing.JLabel txtFaiz;
+    private javax.swing.JTextField txtFieldAnaPara;
+    private javax.swing.JTextField txtFieldDoviz;
+    private javax.swing.JTextField txtFieldFaiz;
+    private javax.swing.JTextField txtFieldTahvil;
+    private javax.swing.JLabel txtTahvil;
     // End of variables declaration//GEN-END:variables
 }

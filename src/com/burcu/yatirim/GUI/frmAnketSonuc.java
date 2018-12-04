@@ -16,35 +16,27 @@ public class frmAnketSonuc extends javax.swing.JFrame {
     /**
      * Creates new form frmAnketSonuc
      */
-    
     MusteriDAO db = new MusteriDAO();
-    
+
     public frmAnketSonuc() {
         initComponents();
-        
+
         int toplam = db.getToplam();
         jTextField2.setText(String.valueOf(toplam));
-        
-        if(toplam >= 0 && toplam <= 20){
+
+        if (toplam >= 0 && toplam <= 20) {
             jRadioButton23.setSelected(true);
-        }
-        else if(toplam >= 21 && toplam <= 35){
+        } else if (toplam >= 21 && toplam <= 35) {
             jRadioButton22.setSelected(true);
-        }
-        else if(toplam >= 36 && toplam <= 50){
+        } else if (toplam >= 36 && toplam <= 50) {
             jRadioButton24.setSelected(true);
-        }
-        else if(toplam >= 51 && toplam <= 75){
+        } else if (toplam >= 51 && toplam <= 75) {
             jRadioButton26.setSelected(true);
-        }
-        else if(toplam >= 76 && toplam <= 100){
+        } else if (toplam >= 76 && toplam <= 100) {
             jRadioButton25.setSelected(true);
         }
-        
-        
+
     }
-    
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -294,23 +286,38 @@ public class frmAnketSonuc extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jRadioButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton22ActionPerformed
-        // TODO add your handling code here:        
+        // TODO add your handling code here:  
+        if(jRadioButton22.isSelected()){
+            btnAnketSonuc.setText("İleri");
+        }
     }//GEN-LAST:event_jRadioButton22ActionPerformed
 
     private void jRadioButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton23ActionPerformed
         // TODO add your handling code here:
+        if(jRadioButton23.isSelected()){
+            btnAnketSonuc.setText("İleri");
+        }
     }//GEN-LAST:event_jRadioButton23ActionPerformed
 
     private void jRadioButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton24ActionPerformed
         // TODO add your handling code here:
+        if(jRadioButton24.isSelected()){
+            btnAnketSonuc.setText("İleri");
+        }
     }//GEN-LAST:event_jRadioButton24ActionPerformed
 
     private void jRadioButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton25ActionPerformed
         // TODO add your handling code here:
+        if(jRadioButton25.isSelected()){
+            btnAnketSonuc.setText("İleri");
+        }
     }//GEN-LAST:event_jRadioButton25ActionPerformed
 
     private void jRadioButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton26ActionPerformed
         // TODO add your handling code here:
+        if(jRadioButton26.isSelected()){
+            btnAnketSonuc.setText("İleri");
+        }
     }//GEN-LAST:event_jRadioButton26ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -319,46 +326,46 @@ public class frmAnketSonuc extends javax.swing.JFrame {
 
     private void jRadioButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton27ActionPerformed
         // TODO add your handling code here:
-        if(jRadioButton27.isSelected()){
+        if (jRadioButton27.isSelected()) {
             btnAnketSonuc.setText("Bitir");
         }
     }//GEN-LAST:event_jRadioButton27ActionPerformed
 
     private void jRadioButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton28ActionPerformed
         // TODO add your handling code here:
-        if(jRadioButton28.isSelected()){
+        if (jRadioButton28.isSelected()) {
             btnAnketSonuc.setText("Bitir");
         }
     }//GEN-LAST:event_jRadioButton28ActionPerformed
 
     private void jRadioButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton29ActionPerformed
         // TODO add your handling code here:
-        if(jRadioButton29.isSelected()){
+        if (jRadioButton29.isSelected()) {
             btnAnketSonuc.setText("Bitir");
         }
     }//GEN-LAST:event_jRadioButton29ActionPerformed
 
     private void jRadioButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton30ActionPerformed
         // TODO add your handling code here:
-        if(jRadioButton30.isSelected()){
+        if (jRadioButton30.isSelected()) {
             btnAnketSonuc.setText("Bitir");
         }
     }//GEN-LAST:event_jRadioButton30ActionPerformed
 
     private void jRadioButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton31ActionPerformed
         // TODO add your handling code here:
-        if(jRadioButton31.isSelected()){
+        if (jRadioButton31.isSelected()) {
             btnAnketSonuc.setText("Bitir");
         }
     }//GEN-LAST:event_jRadioButton31ActionPerformed
 
     private void btnAnketSonucActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnketSonucActionPerformed
         // TODO add your handling code here:
-        if(btnAnketSonuc.getText().equals("Bitir")){
+        if (btnAnketSonuc.getText().equals("Bitir")) {
             System.exit(0);
-        }
-        else{
+        } else {
             new frmAnketHesap().setVisible(true);
+            this.dispose();
         }
     }//GEN-LAST:event_btnAnketSonucActionPerformed
 
