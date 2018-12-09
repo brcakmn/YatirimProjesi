@@ -11,6 +11,10 @@ import com.burcu.yatirim.models.Faiz;
 import com.burcu.yatirim.models.Hesap;
 import com.burcu.yatirim.models.Musteri;
 import com.burcu.yatirim.models.Tahvil;
+import com.toedter.calendar.JDateChooser;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.time.Instant;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import javax.swing.JOptionPane;
@@ -62,6 +66,12 @@ public class frmAnketHesap extends javax.swing.JFrame {
         txtTahvil = new javax.swing.JLabel();
         txtFieldTahvil = new javax.swing.JTextField();
         jButtonHesapla = new javax.swing.JButton();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jDateChooser2 = new com.toedter.calendar.JDateChooser();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Yatırım Değerlendirme");
@@ -184,6 +194,24 @@ public class frmAnketHesap extends javax.swing.JFrame {
         });
         getContentPane().add(jButtonHesapla, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, -1, -1));
 
+        jDateChooser1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jDateChooser1PropertyChange(evt);
+            }
+        });
+        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 80, 160, -1));
+        getContentPane().add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 80, 160, -1));
+
+        jLabel1.setText("Başlangıç Tarihi: ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 60, -1, -1));
+
+        jLabel2.setText("Bitiş Tarihi:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 60, -1, -1));
+
+        jLabel3.setText("Yıllık Fıllık Oranı");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, -1, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 100, -1));
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -234,6 +262,11 @@ public class frmAnketHesap extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButtonHesaplaActionPerformed
 
+    private void jDateChooser1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jDateChooser1PropertyChange
+        // TODO add your handling code here:
+        System.out.println();
+    }//GEN-LAST:event_jDateChooser1PropertyChange
+
     public double FaizHesap() {
         double faizDeger = Integer.parseInt(txtFieldFaiz.getText());
         return faizDeger;
@@ -257,11 +290,11 @@ public class frmAnketHesap extends javax.swing.JFrame {
     public void Hesapla() {
         if (AnaParaHesap() == FaizHesap() + DovizHesap() + TahvilHesap()) {
 
-            Date ilk = new GregorianCalendar(2007, 10, 12).getTime();
-            Date son = new GregorianCalendar(2007, 10, 30).getTime();
+            Date ilk = jDateChooser1.getDate();
+            Date son = jDateChooser2.getDate();
 
             Hesap Hesap = new Hesap("hesap", AnaParaHesap(), ilk, son);
-            Faiz kar = new Faiz("faiz hesabı", FaizHesap(), ilk, son, 10);
+            Faiz kar = new Faiz("faiz hesabı", FaizHesap(), ilk, son, Double.parseDouble(jTextField1.getText()));
             Tahvil Tahvil = new Tahvil("tahvil hesabı", TahvilHesap(), ilk, son, 2);
             Doviz dvz = new Doviz("döviz hesabı", DovizHesap(), ilk, son, 5, 1.5);
             Musteri Musteri = new Musteri("musteri", Hesap, kar, dvz, Tahvil);
@@ -272,7 +305,10 @@ public class frmAnketHesap extends javax.swing.JFrame {
                     + " \n" + "Dövize Yatırılan Para= " + dvz.getAnaPara()
                     + " \n" + "Dövizden Kazanılan Para= " + dvz.getiri()
                     + " \n" + "Tahvile Yatırılan Para= " + Tahvil.getAnaPara()
-                    + " \n" + "Tahvilden Kazanılan Para= " + Tahvil.getiri(), "Hesaplama", HEIGHT);
+                    + " \n" + "Tahvilden Kazanılan Para= " + Tahvil.getiri()/*
+                    + " \n" + "Tahvilden Kazanılan Para= " + ilk
+                    + " \n" + "Tahvilden Kazanılan Para= " + son
+                    + " \n" + "Tahvilden Kazanılan Para= " + Double.parseDouble(jTextField1.getText())*/, "Hesaplama", HEIGHT);
 
         } else {
             Object[] options = {"Yes, please", "No way!"};
@@ -325,12 +361,18 @@ public class frmAnketHesap extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButtonHesapla;
     private javax.swing.JButton jButtonSon;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser jDateChooser2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelPuanHesap3;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JRadioButton jRadioButton18;
     private javax.swing.JRadioButton jRadioButton19;
     private javax.swing.JRadioButton jRadioButton20;
     private javax.swing.JRadioButton jRadioButton21;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lbl21;
     private javax.swing.JLabel lbl34;
     private javax.swing.JLabel lbl54;
@@ -346,4 +388,5 @@ public class frmAnketHesap extends javax.swing.JFrame {
     private javax.swing.JTextField txtFieldTahvil;
     private javax.swing.JLabel txtTahvil;
     // End of variables declaration//GEN-END:variables
+
 }
