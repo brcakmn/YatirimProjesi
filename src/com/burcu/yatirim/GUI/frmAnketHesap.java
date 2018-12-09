@@ -193,12 +193,6 @@ public class frmAnketHesap extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonHesapla, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, -1, -1));
-
-        jDateChooser1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooser1PropertyChange(evt);
-            }
-        });
         getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 80, 160, -1));
         getContentPane().add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 80, 160, -1));
 
@@ -261,11 +255,6 @@ public class frmAnketHesap extends javax.swing.JFrame {
         Hesapla();
         this.dispose();
     }//GEN-LAST:event_jButtonHesaplaActionPerformed
-
-    private void jDateChooser1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jDateChooser1PropertyChange
-        // TODO add your handling code here:
-        System.out.println();
-    }//GEN-LAST:event_jDateChooser1PropertyChange
 
     public double FaizHesap() {
         double faizDeger = Integer.parseInt(txtFieldFaiz.getText());
