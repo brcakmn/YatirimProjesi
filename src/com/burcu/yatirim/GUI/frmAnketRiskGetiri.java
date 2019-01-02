@@ -10,7 +10,7 @@ import com.burcu.yatirim.models.Musteri;
 
 /**
  *
- * @author User
+ * @author burcu
  */
 public class frmAnketRiskGetiri extends javax.swing.JFrame {
 

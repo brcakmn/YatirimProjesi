@@ -9,7 +9,8 @@ package com.burcu.yatirim.models;
  *
  * @author burcu
  */
-public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
+// Müşteri class'ı oluşturulup değişkenlerinin tanımlanması yapıldı.
+public class Musteri {
 
     private Long id;
     private String ad;
@@ -25,9 +26,9 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
     private Faiz Faiz;
     private Doviz Doviz;
     private Tahvil Tahvil;
-    //müsteri için costructur tanımladım burada müşteri herhangi bir hesabı kullanabilir
-    //ya da sadece birini ya da hepsine birden parasını yatırabilir
 
+    // Müşteri için kurucu metot tanımladım. Burada müşteri herhangi bir hesabı kullanabilir
+    // ya da sadece birini ya da hepsine birden parasını yatırabilir.
     public Musteri() {
     }
 
@@ -37,19 +38,9 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
         Faiz = f;
         Doviz = d;
         Tahvil = t;
-//        System.out.println("***********MÜŞTERİ**************");
-//        System.out.println("Müşterinin Danışmana Verdiği Para= " + h.getAnaPara());
-//        System.out.println("Faize Yatırılan Para= " + Faiz.getAnaPara());
-//        System.out.println("Faizden Kazanılan Para= " + Faiz.getiri());
-//        System.out.println("Dövüze Yatırılan Para= " + Doviz.getAnaPara());
-//        System.out.println("Dövizden Kazanılan Para= " + Doviz.getiri());
-//        System.out.println("Tahvile Yatırılan Para= " + Tahvil.getAnaPara());
-//        System.out.println("Tahvilden Kazanılan Para= " + Tahvil.getiri());
-//        System.out.println();
-//        System.out.println();
-//        System.out.println();
     }
-
+    
+    // Müşteri class'ı için Set ve Get metotları tanımlandı.
     public Long getId() {
         return id;
     }
@@ -161,13 +152,5 @@ public class Musteri {//musteri sinifina acýp degiskenlerini tanýmladým
     public void setPuangetiri(Long puangetiri) {
         this.puangetiri = puangetiri;
     }
-    
-    
-    
-    
-    
-    
-    
-    
 
 }

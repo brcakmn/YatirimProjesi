@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author cem.unustu
+ * @author burcu
  */
 public class MusteriDAO {
 
@@ -30,6 +30,7 @@ public class MusteriDAO {
     private final String username = "postgres";
     private final String password = "burcu";
 
+    // Veritabanı için oturum açma
     public void openSession() {
         try {
             Driver.class.forName("org.postgresql.Driver");
@@ -39,6 +40,7 @@ public class MusteriDAO {
         }
     }
 
+    // Veritabanı için oturum kapatma
     public void closeSession() {
         try {
             conn.close();
@@ -46,21 +48,7 @@ public class MusteriDAO {
             System.out.println("Error: " + ex.toString());
         }
     }
-
-//    public int getLastId() {
-//        openSession();
-//        int id = 0;
-//        try {
-//            rs = ps.getGeneratedKeys();
-//            if (rs.next()) {
-//                id = rs.getInt(1);
-//            }
-//        } catch (Exception ex) {
-//            System.out.println("Error: " + ex.toString());
-//        }
-//        closeSession();
-//        return id;
-//    }
+    // Müşteri objesini veritabanına kayıt ediyoruz.
     public void Save(Musteri mst) {
         openSession();
         try {
@@ -70,20 +58,18 @@ public class MusteriDAO {
             String soyad = mst.getSoyad();
             String telefon = mst.getTelefon();
             String adres = mst.getAdres();
-//            Long puanyas = mst.getPuanyas();
-
+            
             ps.setString(1, ad);
             ps.setString(2, soyad);
             ps.setString(3, telefon);
             ps.setString(4, adres);
-//            ps.setLong(4, puanyas);
             ps.executeUpdate();
         } catch (Exception ex) {
             System.out.println("Error: " + ex.toString());
         }
         closeSession();
     }
-
+    
     public int getLastId() {
         openSession();
         int getLastId = 0;

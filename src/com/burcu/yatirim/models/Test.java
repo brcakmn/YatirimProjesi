@@ -12,9 +12,11 @@ import java.util.GregorianCalendar;
  *
  * @author burcu
  */
-public class Test {// test sınıfı oluşturdum
 
-    //burada 3 tane müşteri için bilgileri yazdırdım istediği hesabı kullandırdım
+//Test class'ı oluşturdum.
+public class Test {
+
+    // Burada 3 tane müşteri için bilgileri yazdırdım istediği hesabı kullandırdım.
     public static void main(String[] args) {
 
         Date ilk = new GregorianCalendar(2007, 10, 12).getTime();
@@ -30,10 +32,10 @@ public class Test {// test sınıfı oluşturdum
         System.out.println();
         System.out.println();
 
-        Hesap Hesap1 = new Hesap("hesap", 10000, ilk, son);
-        Faiz kar1 = new Faiz("faiz hesabı", 5000, ilk, son, 12);
-        Tahvil Tahvil1 = new Tahvil("tahvil hesabı", 2500, ilk, son, 3);
-        Doviz Döviz1 = new Doviz("döviz hesabı", 2500, ilk, son, 7, 2);
+        Hesap Hesap1 = new Hesap("hesap", 6000, ilk, son);
+        Faiz kar1 = new Faiz("faiz hesabı", 4000, ilk, son, 12);
+        Tahvil Tahvil1 = new Tahvil("tahvil hesabı", 1000, ilk, son, 3);
+        Doviz Döviz1 = new Doviz("döviz hesabı", 1000, ilk, son, 7, 2);
         Musteri Musteri1 = new Musteri("musteri", Hesap1, kar1, Döviz1, Tahvil1);
         System.out.println("işlemler sonunda toplam anapara= " + (Musteri1.getDoviz().getiri() + Musteri1.getFaiz().getiri() + Musteri1.getHesap().getAnaPara() + Musteri1.getTahvil().getiri()));
         System.out.println();
@@ -54,7 +56,7 @@ public class Test {// test sınıfı oluşturdum
 
 }
 
-//burada müþterinin danýþmana ne kadar para verdiðini,bunun ne kadarýnýn faize yatýrýldýðý ve 
-//faizden ne kadar kazandýðý,ne kadarýnýn dözvize yatýrýldýðý ne kadar kazandýðý,ne kadarýnýn tahvile yatýrýldýðý
-//ve ne kadar kazanýldýðý bilgileri incelenebilir.ve bütün iþlemler sonunda ne kadar parasý olacaðý görülebilir.
+// Burada müşterinin danışmana ne kadar para verdiğini, bunun ne kadarının faize yatırıldığını ve
+// Faizden ne kadar kazandığı, ne kadarının dövize yatırıldığı ne kadar kazandığı, ne kadarının tahvile yatırıldığı
+// ve ne kadar kazanıldığı bilgileri incelenebilir ve bütün işlemler sonunda ne kadar parası olacağıo görülebilir.
 

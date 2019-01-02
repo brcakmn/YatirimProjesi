@@ -11,7 +11,9 @@ import java.util.Date;
  *
  * @author burcu
  */
-public class Faiz extends Hesap { //hesaptan miras olarak tanýmlandý
+
+// Hesaptan miras olarak tanımlandı.
+public class Faiz extends Hesap { 
 
     private double yfo;
 
@@ -20,8 +22,7 @@ public class Faiz extends Hesap { //hesaptan miras olarak tanýmlandý
         yfo = y;
 
     }
-// yýllýk faiz oranýna ait set ve get metotlarý
-
+    // Yıllık faiz oranına ait Set ve Get metotları
     public double getyfo() {
         return yfo;
     }
@@ -29,8 +30,8 @@ public class Faiz extends Hesap { //hesaptan miras olarak tanýmlandý
     public void setyfo(double y) {
         yfo = y;
     }
-
-    public double getiri() {//faizden kazanýlan toplam miktarý hesaplar
+    // Faizden kazanılan toplam miktarı hesaplar.
+    public double getiri() {
 
         return this.getAnaPara() * yfo * gun() / 36500;
 

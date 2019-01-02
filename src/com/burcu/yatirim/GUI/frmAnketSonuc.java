@@ -9,7 +9,7 @@ import com.burcu.yatirim.dal.MusteriDAO;
 
 /**
  *
- * @author cem.unustu
+ * @author burcu
  */
 public class frmAnketSonuc extends javax.swing.JFrame {
 
@@ -122,28 +122,28 @@ public class frmAnketSonuc extends javax.swing.JFrame {
         });
         jPanel6.add(jRadioButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 270, -1, -1));
 
-        lbl35.setText("<html>Düşük Riskli (Hazine Bonosu, Devlet Tahvili, Hazine Kira Sertifikaları, Yatırımcı  Bilgi Formunda Risk Değeri 2 ve 3 olan yatırım fonları, vb.)</html>");
-        jPanel6.add(lbl35, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 410, 40));
+        lbl35.setText("<html>Düşük Riskli (Döviz, Faiz vb.)</html>");
+        jPanel6.add(lbl35, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 160, 40));
 
-        lbl74.setText("<html>Çok Yüksek Riskli (Tezgahüstü Türev İşlemler, Yapılandırılmış Borçlanma Araçları, Kaldıraçlı Alım Satım İşlemleri - FX, Yatırımcı Bilgi Formunda Risk Değeri 7 olan  yatırım fonları vb.)</html>");
-        jPanel6.add(lbl74, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 410, 70));
+        lbl74.setText("<html>Çok Yüksek Riskli (Faiz vb.)</html>");
+        jPanel6.add(lbl74, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 140, 30));
 
         lblPuan9.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblPuan9.setText("Min");
         jPanel6.add(lblPuan9, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 20, 40, -1));
 
-        lbl75.setText("<html>Yüksek Riskli (Türev İşlemler (Vadeli İşlem ve Opsiyon Piyasasında), Varant, Yatırım Kuruluşu Sertifikası, Yatırımcı Bilgi Formunda Risk Değeri 5 ve 6 olan  yatırım fonları, vb.)</html>");
-        jPanel6.add(lbl75, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 400, -1));
+        lbl75.setText("<html>Yüksek Riskli (Faiz, tahvil vb.)</html>");
+        jPanel6.add(lbl75, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 160, 40));
 
         lbl22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl22.setText("<html>Çok Düşük Riskli (Repo-Ters Repo, BPP, Yatırımcı Bilgi Formunda Risk Değeri  1 olan yatırım fonları, vb .)</html>");
+        lbl22.setText("<html>Çok Düşük Riskli (Döviz, tahvil, faiz vb .)</html>");
         lbl22.setToolTipText("");
         lbl22.setAutoscrolls(true);
         lbl22.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jPanel6.add(lbl22, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 420, 50));
+        jPanel6.add(lbl22, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 200, 50));
 
-        lbl55.setText("<html>Orta Riskli (Ortaklık Payı, Eurobond, Dövizli Tahviller, Özel Sektör Borçlanma Araçları, Kira Sertifikaları, Yatırımcı Bilgi Formunda Risk Değeri 4 olan yatırım  fonları, vb.)</html>");
-        jPanel6.add(lbl55, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 400, 60));
+        lbl55.setText("<html>Orta Riskli (Tahvil vb.)</html>");
+        jPanel6.add(lbl55, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 140, 60));
 
         lblPuan10.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblPuan10.setText("Uygun");

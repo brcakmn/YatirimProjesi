@@ -11,15 +11,17 @@ import java.util.Date;
  *
  * @author burcu
  */
-public class Hesap extends Object {//HESAP CLASSI AÇIP DEĞİŞKENLERİ TANIMLADIM
+
+// Hesap class'ı açılıp parametrelerin tanımlası yapıldı.
+public class Hesap extends Object {
 
     private String hesapAdi;
     private double anaPara;
     private Date atarih;
     private Date ktarih;
     private double kfiyat;
-
-    public Hesap(String ad, double para, Date itarih, Date starih)//constructor tanýmlandý,
+    // Kurucu metot tanımlaması yapıldı.
+    public Hesap(String ad, double para, Date itarih, Date starih)
     {
         hesapAdi = ad;
         anaPara = para;
@@ -27,7 +29,7 @@ public class Hesap extends Object {//HESAP CLASSI AÇIP DEĞİŞKENLERİ TANIMLA
         ktarih = starih;
 
     }
-
+    // Hesap class'ı için Set ve Get metotları tanımlandı.
     public String getHesapAdi() {
         return hesapAdi;
     }
@@ -71,8 +73,8 @@ public class Hesap extends Object {//HESAP CLASSI AÇIP DEĞİŞKENLERİ TANIMLA
     public double getiri() {
         return anaPara;
     }
-
-    public long gun() {//iki tarih arasındaki farkı gün olarak bulan methodu yazdım
+    // İki tarih arasındaki farkı gün olarak bulan metot tanımlandı.
+    public long gun() {
         long fark = ktarih.getTime() - atarih.getTime();
         fark = fark / (1000 * 60 * 60 * 24);
         return fark;

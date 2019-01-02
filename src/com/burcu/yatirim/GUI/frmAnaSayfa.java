@@ -8,11 +8,10 @@ package com.burcu.yatirim.GUI;
 import com.burcu.yatirim.dal.MusteriDAO;
 import com.burcu.yatirim.models.Musteri;
 import javax.swing.JOptionPane;
-import jdk.nashorn.internal.scripts.JO;
 
 /**
  *
- * @author cem.unustu
+ * @author burcu
  */
 public class frmAnaSayfa extends javax.swing.JFrame {
 
@@ -180,8 +179,6 @@ public class frmAnaSayfa extends javax.swing.JFrame {
 
     private void jButtonAnaSayfaIleriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAnaSayfaIleriActionPerformed
         // TODO add your handling code here:
-//        new frmAnket().setVisible(true);
-//        new frmAnaSayfa().dispose();
     }//GEN-LAST:event_jButtonAnaSayfaIleriActionPerformed
 
     private void jButtonAnaSayfaIleriMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonAnaSayfaIleriMouseClicked

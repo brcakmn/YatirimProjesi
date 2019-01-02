@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  *
  * @author burcu
- * @param ad: Doviz adı girilir.
+ * @param ad: Döviz adı girilir.
  */
 public class Doviz extends Faiz {
 
@@ -27,7 +27,7 @@ public class Doviz extends Faiz {
         kur = kr;
     }
 
-// kur için set ve get metotlarý
+    // Kur(Faiz) için Set ve Get metotları
     public void setkur(double kr) {
         kur = kr;
     }
@@ -91,8 +91,8 @@ public class Doviz extends Faiz {
     public double getkur() {
         return kur;
     }
-
-    public double getiri() {// dövizden kazanýlan toplam miktarý hesaplar
+    // Dövizden kazanılan toplam miktarı hesaplar.
+    public double getiri() {
 
         return (this.getAnaPara() * this.getyfo() * gun() / 36500) * kur;
 

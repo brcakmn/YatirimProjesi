@@ -11,12 +11,7 @@ import com.burcu.yatirim.models.Faiz;
 import com.burcu.yatirim.models.Hesap;
 import com.burcu.yatirim.models.Musteri;
 import com.burcu.yatirim.models.Tahvil;
-import com.toedter.calendar.JDateChooser;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.time.Instant;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import javax.swing.JOptionPane;
 
 /**
@@ -257,18 +252,31 @@ public class frmAnketHesap extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonHesaplaActionPerformed
 
     public double FaizHesap() {
-        double faizDeger = Integer.parseInt(txtFieldFaiz.getText());
-        return faizDeger;
+        if (txtFieldFaiz.getText().isEmpty()) {
+            return 0;            
+        } else {
+            double dovizDeger = Integer.parseInt(txtFieldFaiz.getText());
+            return dovizDeger;            
+        }
     }
 
     public double DovizHesap() {
-        double dovizDeger = Integer.parseInt(txtFieldDoviz.getText());
-        return dovizDeger;
+        if (txtFieldDoviz.getText().isEmpty()) {
+            return 0;            
+        } else {
+            double dovizDeger = Integer.parseInt(txtFieldDoviz.getText());
+            return dovizDeger;            
+        }
     }
 
     public double TahvilHesap() {
-        double tahvilDeger = Integer.parseInt(txtFieldTahvil.getText());
-        return tahvilDeger;
+        if (txtFieldTahvil.getText().isEmpty()) {
+            return 0;            
+        } else {
+            double dovizDeger = Integer.parseInt(txtFieldTahvil.getText());
+            return dovizDeger;            
+        }
+
     }
 
     public double AnaParaHesap() {

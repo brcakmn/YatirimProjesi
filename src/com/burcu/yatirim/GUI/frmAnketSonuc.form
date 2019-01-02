@@ -145,21 +145,21 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lbl35">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;D&#xfc;&#x15f;&#xfc;k Riskli (Hazine Bonosu, Devlet Tahvili, Hazine Kira Sertifikalar&#x131;, Yat&#x131;r&#x131;mc&#x131;  Bilgi Formunda Risk De&#x11f;eri 2 ve 3 olan yat&#x131;r&#x131;m fonlar&#x131;, vb.)&lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;D&#xfc;&#x15f;&#xfc;k Riskli (D&#xf6;viz, Faiz vb.)&lt;/html&gt;"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="40" y="80" width="410" height="40"/>
+              <AbsoluteConstraints x="40" y="80" width="160" height="40"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl74">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xc7;ok Y&#xfc;ksek Riskli (Tezgah&#xfc;st&#xfc; T&#xfc;rev &#x130;&#x15f;lemler, Yap&#x131;land&#x131;r&#x131;lm&#x131;&#x15f; Bor&#xe7;lanma Ara&#xe7;lar&#x131;, Kald&#x131;ra&#xe7;l&#x131; Al&#x131;m Sat&#x131;m &#x130;&#x15f;lemleri - FX, Yat&#x131;r&#x131;mc&#x131; Bilgi Formunda Risk De&#x11f;eri 7 olan  yat&#x131;r&#x131;m fonlar&#x131; vb.)&lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xc7;ok Y&#xfc;ksek Riskli (Faiz vb.)&lt;/html&gt;"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="40" y="260" width="410" height="70"/>
+              <AbsoluteConstraints x="40" y="260" width="140" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -178,35 +178,35 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lbl75">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;Y&#xfc;ksek Riskli (T&#xfc;rev &#x130;&#x15f;lemler (Vadeli &#x130;&#x15f;lem ve Opsiyon Piyasas&#x131;nda), Varant, Yat&#x131;r&#x131;m Kurulu&#x15f;u Sertifikas&#x131;, Yat&#x131;r&#x131;mc&#x131; Bilgi Formunda Risk De&#x11f;eri 5 ve 6 olan  yat&#x131;r&#x131;m fonlar&#x131;, vb.)&lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;Y&#xfc;ksek Riskli (Faiz, tahvil vb.)&lt;/html&gt;"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="40" y="200" width="400" height="-1"/>
+              <AbsoluteConstraints x="40" y="200" width="160" height="40"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl22">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xc7;ok D&#xfc;&#x15f;&#xfc;k Riskli (Repo-Ters Repo, BPP, Yat&#x131;r&#x131;mc&#x131; Bilgi Formunda Risk De&#x11f;eri  1 olan yat&#x131;r&#x131;m fonlar&#x131;, vb .)&lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xc7;ok D&#xfc;&#x15f;&#xfc;k Riskli (D&#xf6;viz, tahvil, faiz vb .)&lt;/html&gt;"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="autoscrolls" type="boolean" value="true"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="40" y="30" width="420" height="50"/>
+              <AbsoluteConstraints x="40" y="30" width="200" height="50"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl55">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;Orta Riskli (Ortakl&#x131;k Pay&#x131;, Eurobond, D&#xf6;vizli Tahviller, &#xd6;zel Sekt&#xf6;r Bor&#xe7;lanma Ara&#xe7;lar&#x131;, Kira Sertifikalar&#x131;, Yat&#x131;r&#x131;mc&#x131; Bilgi Formunda Risk De&#x11f;eri 4 olan yat&#x131;r&#x131;m  fonlar&#x131;, vb.)&lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;Orta Riskli (Tahvil vb.)&lt;/html&gt;"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="40" y="130" width="400" height="60"/>
+              <AbsoluteConstraints x="40" y="130" width="140" height="60"/>
             </Constraint>
           </Constraints>
         </Component>

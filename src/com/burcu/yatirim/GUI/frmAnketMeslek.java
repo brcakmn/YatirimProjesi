@@ -10,7 +10,7 @@ import com.burcu.yatirim.models.Musteri;
 
 /**
  *
- * @author User
+ * @author burcu
  */
 public class frmAnketMeslek extends javax.swing.JFrame {
 
